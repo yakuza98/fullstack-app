@@ -1,0 +1,13 @@
+.aside {
+  display: flex;
+  justify-content: center;
+
+  &__logo {
+    height: 100px;
+    width: 100px;
+    transition: opacity 0.1s ease;
+  }
+  &__logo:hover {
+    opacity: .8;
+  }
+}
