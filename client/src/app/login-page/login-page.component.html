@@ -7,6 +7,7 @@
     <span class="card-title">Увійти до системи</span>
     <div class="input-field">
       <input
+        class="input-field__bg"
         formControlName="email"
         id="email"
         type="email"
@@ -24,6 +25,7 @@
     </div>
     <div class="input-field">
       <input
+        class="input-field__bg"
         formControlName="password"
         id="password"
         type="password"
@@ -43,7 +45,7 @@
       </span>
     </div>
   </div>
-  <div class="card-action">
+  <div class="card-action__login">
     <button
       [disabled]="form.invalid || form.disabled"
       type="submit"

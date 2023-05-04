@@ -1,0 +1,13 @@
+.card {
+  background-image: url("https://images.fineartamerica.com/images-medium-large-5/gorilla-luke-and-slavi.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &-action__login{
+    padding: 16px 24px;
+  }
+}
+.input-field__bg {
+  opacity: .85;
+}

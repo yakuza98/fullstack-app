@@ -1,0 +1,9 @@
+.card {
+  background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/powerful-gorilla-marian-voicu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  &-action__register{
+    padding: 16px 24px;
+  }
+}

@@ -1,18 +1,19 @@
-<nav>
-  <div class="nav-wrapper grey darken-1">
-    <a routerLink="/" class="brand-logo">Gorilla Boss</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li routerLinkActive="active">
-        <a routerLink="/login">Вхід</a>
-      </li>
-      <li routerLinkActive="active">
-        <a routerLink="/register">Реєстрація</a>
-      </li>
-    </ul>
+<div class="wrapper">
+  <nav>
+    <div class="nav-wrapper grey darken-1">
+      <a routerLink="/" class="brand-logo">Gorilla Boss</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li routerLinkActive="active">
+          <a routerLink="/login">Вхід</a>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink="/register">Реєстрація</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="auth-block">
+    <router-outlet></router-outlet>
   </div>
-</nav>
-
-<div class="auth-block">
-  <router-outlet></router-outlet>
 </div>
-
