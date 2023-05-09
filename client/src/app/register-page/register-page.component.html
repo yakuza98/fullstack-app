@@ -7,6 +7,7 @@
     <span class="card-title">Створити акаунт</span>
     <div class="input-field">
       <input
+        class="input-field__bg"
         formControlName="email"
         id="email"
         type="email"
@@ -17,13 +18,18 @@
         class="helper-text red-text"
         *ngIf="form.get('email').invalid && form.get('email').touched"
       >
-       <span *ngIf="form.get('email').errors['required']"> Поле email не може бути пустим</span>
-        <span *ngIf="form.get('email').errors['email']"> Введіть корректний email</span>
+       <span
+         class="card-content__input--error"
+         *ngIf="form.get('email').errors['required']"> Поле email не може бути пустим</span>
+        <span
+          class="card-content__input--error"
+          *ngIf="form.get('email').errors['email']"> Введіть корректний email</span>
       </span>
 
     </div>
     <div class="input-field">
       <input
+        class="input-field__bg"
         formControlName="password"
         id="password"
         type="password"
@@ -35,8 +41,12 @@
         class="helper-text red-text"
         *ngIf="form.get('password').invalid && form.get('password').touched"
       >
-       <span *ngIf="form.get('password').errors['required']"> Поле password не може бути пустим</span>
-        <span *ngIf="form.get('password').errors['minlength'] && form.get('password').errors['minlength']['requiredLength']">
+       <span
+         class="card-content__input--error"
+         *ngIf="form.get('password').errors['required']"> Поле password не може бути пустим</span>
+        <span
+          class="card-content__input--error"
+          *ngIf="form.get('password').errors['minlength'] && form.get('password').errors['minlength']['requiredLength']">
           Пароль має бути більше {{form.get('password').errors['minlength']['requiredLength']}} символів.
           Наразі {{ form.get('password').errors['minlength']['actualLength']}}
         </span>
